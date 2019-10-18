@@ -1,22 +1,170 @@
-.App {
-  text-align: center;
+*{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+.container{
+  width:90%;
+  margin:auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  /* font-family: "Comic Sans MS", cursive, sans-serif; */
+  /* background-color: #282c34;s */
+  /* border:solid 3px black; */
+  /* border-radius: 10px; */
+  margin:10px;
+  text-align:center;
+  padding:15px;
+  font-size: 30px;
+  color: black;
+}
+
+.App-div{
+  display:flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 15px;
 }
 
 .App-link {
-  color: #09d3ac;
+  text-decoration: none;
+  width:70%;
+  text-align:center;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #999;
+  padding:5px;
+  border-radius: 50px;
+  font-size:18px;
+  color: maroon;
+}
+
+.App-link:hover{
+  background-color: aquamarine;
+}
+
+.currentLink {
+  background-color:chocolate;
+}
+
+.quotediv{
+  margin-top: 15px;
+  border: solid 3px black;
+  border-radius: 10px;
+  padding:15px;
+}
+
+.quotetext{
+  font-size:20px;
+  padding:10px;
+}
+
+.quoteauthor{
+  font-size: 15px;
+  font-style: italic;
+  padding:10px;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.button:disabled{
+  background-color: #666;
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .App-div{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .App-link{
+    font-size: 25px;
+    padding:15px;
+  }
+  .App-header {
+    font-size:50px;
+    padding:50px;
+  }
+  .quotediv{
+    margin-top: 35px;
+    border: solid 3px;
+    border-radius: 10px;
+    padding:15px;
+  }
+  .quotetext{
+    font-size: 30px;
+  }
+  .quoteauthor{
+    font-size: 25px;
+  }
+  .button {
+    margin: 15px 0px 15px 10px;
+    font-size: 20px;
+    padding:10px;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .container{
+    max-width: 950px;
+  }
+  .App-div{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .App-link{
+    width:auto;
+    font-size: 15px;
+    padding:15px;
+  }
+  .App-header {
+    font-size:50px;
+    padding:30px;
+  }
+  .quotediv{
+    margin-top: 35px;
+    border: solid 3px;
+    border-radius: 10px;
+    padding:15px;
+  }
+  .quotetext{
+    font-size: 20px;
+  }
+  .quoteauthor{
+    font-size: 15px;
+  }
+  .button {
+    margin: 15px 0px 15px 10px;
+    font-size: 15px;
+    padding:10px;
+  }
 }
